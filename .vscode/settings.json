@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "chess.h": "c"
+        "chess.h": "c",
+        "chess_pieces.h": "c"
     }
 }

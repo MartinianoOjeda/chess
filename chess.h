@@ -13,7 +13,7 @@
 void hideCursor();
 //void gameWindowSize(SHORT, SHORT);
 void gotoXY(int, int);
-void print(int, int, int, char);
+void print(int, int, int, int, char);
 
 /*void gameWindowSize(SHORT x, SHORT y) {
     hc = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -43,8 +43,8 @@ void gotoXY(int x, int y) {
     printf("%c[%d;%dH", ESC, y, x);
 }
 
-void print(int x, int y, int color, char c) {
-    printf("%c[1;%dm", ESC, color); // color rojo (32) al caracter impreso
+void printXY(int x, int y, int color, int tone, int c) {
+    printf("%c[%d;%dm", ESC, tone, color); // color rojo (32) al caracter impreso
     gotoXY(x, y);
     printf("%c", c);
     printf("%c[0m", ESC); //reestablece el color por defecto de la consola
