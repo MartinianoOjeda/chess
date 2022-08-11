@@ -4,7 +4,6 @@
 #define DARK_SQUARE 33
 #define LIGHT_SQUARE 30
 #define CHAR 219
-#define BOARD 64
 
 typedef int draw[DRAW_SQUARE];
 
